@@ -14,9 +14,6 @@ resources:
   - hue-secret.yaml
   - hue-service.yaml
 
-commonLabels:
-  app: hue
-
 images:
   - name: hue
     newName: shgriffi/hue
