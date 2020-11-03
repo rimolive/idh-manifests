@@ -38,5 +38,5 @@ patchesJson6902:
         value: openshift
     target:
       kind: DeploymentConfig
-      name: postgres
+      name: thriftserver-postgres
       version: v1
