@@ -18,11 +18,11 @@ spec:
     - type: ConfigChange
   replicas: 1
   selector:
-    name: hue-mysql
+    deploymentconfig: hue-db
   template:
     metadata:
       labels:
-        name: hue-mysql
+        deploymentconfig: hue-db
     spec:
       containers:
         - name: mysqld-exporter
