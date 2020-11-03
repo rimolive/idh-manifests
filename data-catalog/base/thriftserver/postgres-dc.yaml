@@ -18,11 +18,11 @@ spec:
     - type: ConfigChange
   replicas: 1
   selector:
-    name: postgres
+    deploymentconfig: thriftserver-db
   template:
     metadata:
       labels:
-        name: postgres
+        deploymentconfig: thriftserver-db
     spec:
       containers:
         - name: postgres-exporter

@@ -3,10 +3,12 @@ kind: DeploymentConfig
 metadata:
   name: thriftserver
 spec:
+  selector:
+    deploymentconfig: thriftserver
   template:
     metadata:
       labels:
-        name: thriftserver
+        deploymentconfig: thriftserver
     spec:
       initContainers:
         - name: custom-authenticator-builder
