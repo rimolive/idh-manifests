@@ -4,7 +4,7 @@ metadata:
   name: hue
 spec:
   selector:
-    name: hue
+    deploymentconfig: hue
   ports:
     - name: 8000-tcp
       port: 8000
