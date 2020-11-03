@@ -11,7 +11,7 @@ spec:
       port: 3306
       targetPort: 3306
   selector:
-    deploymentconfig: hue-db
+    deploymentconfig: hue-mysql
   type: ClusterIP
   sessionAffinity: None
 status:
