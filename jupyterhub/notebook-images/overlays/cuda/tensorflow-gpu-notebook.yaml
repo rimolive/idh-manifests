@@ -10,34 +10,6 @@ items:
   spec:
     lookupPolicy:
       local: true
-- apiVersion: build.openshift.io/v1
-  kind: BuildConfig
-  metadata:
-    labels:
-      build: s2i-minimal-notebook-gpu
-    name: s2i-minimal-notebook-gpu
-  spec:
-    output:
-      to:
-        kind: ImageStreamTag
-        name: s2i-minimal-notebook-gpu:3.6
-    resources:
-      limits:
-        memory: 2Gi
-    source:
-      contextDir: minimal-notebook
-      git:
-        uri: https://github.com/vpavlin/jupyter-notebooks
-      type: Git
-    strategy:
-      sourceStrategy:
-        from:
-          kind: ImageStreamTag
-          name: python-36-ubi7:latest
-      type: Source
-    triggers:
-    - type: ConfigChange
-    - type: ImageChange
 - apiVersion: image.openshift.io/v1
   kind: ImageStream
   metadata:
