@@ -1,0 +1,10 @@
+---
+varReference:
+  - path: stringData/config-worker.properties
+    kind: Secret
+  - path: stringData/hive.properties
+    kind: Secret
+  - path: stringData/node.properties
+    kind: Secret
+  - path: spec/template/spec/containers[]/env[]/valueFrom/secretKeyRef/name
+    kind: Deployment
