@@ -35,7 +35,7 @@ spec:
         value: prometheus_kafka_consumer_group_exporter:main
       from:
         kind: DockerImage
-        name: centos/python-36-centos7
+        name: quay.io/internaldatahub/python-36-centos7:latest
       forcePull: true
     type: Source
   triggers:
