@@ -108,10 +108,10 @@ spec:
       AUTH_ROLES_MAPPING = {
       'cn=mhicks-all,ou=adhoc,ou=managedGroups,dc=redhat,dc=com': ['CCX'],
 
-      'cn=candlepin,ou=Groups,dc=redhat,dc=com': ['Subscriptions'],
+      'cn=candlepin-posix,ou=Groups,dc=redhat,dc=com': ['Subscriptions'],
 
-      'cn=cee-pe,ou=Groups,dc=redhat,dc=com': ['Subscriptions']
-      
+      'cn=ceeandpe,ou=Groups,dc=redhat,dc=com': ['Subscriptions']
+
       }
 
       # the LDAP user attribute which has their role DNs
