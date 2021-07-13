@@ -130,6 +130,7 @@ profiles:
     - cdolfi
   resources:
     mem_limit: 16Gi
+    cpu_limit: 8
 - name: Users with 32 GB
   users:
     - dmulford
